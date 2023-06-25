@@ -24,7 +24,7 @@ This has been configured properly for page previous/next with the graph settings
 
 ```toml
 [build]
-command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/rockmanvnx6/obsidian-zola.git __site && __site/run.sh"
+command = "rm -rf __obsidian __site && git clone https://github.com/rockmanvnx6/obsidian-zola.git __site && __site/run.sh || true"
 publish = "public"
 
 [build.environment]
