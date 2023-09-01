@@ -29,9 +29,19 @@
 
 {{ macros_head::favicons() }}
 {% block math %}{{ macros_math::math() }}{% endblock math %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5996186443921437"
+     crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP1EL7X3WH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FP1EL7X3WH');
+</script
 </head>
 {% block body %}{% set page_class="home" %}{% endblock body %}
-</head>
   <body class="{{ page_class }}">
   <script>
     if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
