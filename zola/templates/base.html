@@ -31,7 +31,8 @@
 {% block math %}{{ macros_math::math() }}{% endblock math %}
 </head>
 {% block body %}{% set page_class="home" %}{% endblock body %}
-<body class="{{ page_class }}">
+</head>
+  <body class="{{ page_class }}">
   <script>
     if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.body.classList.add("dark");
